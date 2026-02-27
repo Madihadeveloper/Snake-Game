@@ -1,0 +1,62 @@
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#ddd;
+}
+
+.board{
+    width:600px;
+    height:600px;
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
+    border:6px solid black;
+    position:relative;
+}
+
+/* BOX STYLE */
+.box{
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:14px;
+    background:white;
+}
+
+/* Alternate Colors */
+.box:nth-child(odd){
+    background:#f8f8a0;
+}
+.box:nth-child(even){
+    background:#a0e7e5;
+}
+
+/* LADDERS */
+.ladder{
+    position:absolute;
+    width:10px;
+    background:brown;
+}
+
+/* SNAKES */
+.snake{
+    position:absolute;
+    height:12px;
+    background:green;
+    border-radius:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="board">
+
+<!-- 100 Boxes -->
